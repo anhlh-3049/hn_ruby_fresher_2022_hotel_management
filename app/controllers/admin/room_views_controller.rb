@@ -13,6 +13,7 @@ class Admin::RoomViewsController < Admin::AdminController
       flash[:success] = t ".flash_sucsses"
       redirect_to admin_room_views_path
     else
+      flash[:error] = t ".flash_error"
       render :new
     end
   end

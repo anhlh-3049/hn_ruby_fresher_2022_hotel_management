@@ -3,12 +3,15 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "3.0.2"
 
+gem "active_storage_validations"
 gem "bcrypt", "~> 3.1", ">= 3.1.12"
 gem "bootsnap", ">= 1.4.4", require: false
 gem "cocoon"
 gem "config"
+gem "image_processing"
 gem "jbuilder", "~> 2.7"
 gem "jquery-rails"
+gem "mini_magick"
 gem "mysql2", "~> 0.5"
 gem "pagy"
 gem "puma", "~> 5.0"

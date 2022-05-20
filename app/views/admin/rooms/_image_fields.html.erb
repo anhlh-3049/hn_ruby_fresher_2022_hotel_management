@@ -2,9 +2,5 @@
   <div class="field">
     <%= f.file_field :image %>
   </div>
-  <div class="field">
-    <%= f.check_box :_destroy %>
-    <%= f.label :delete %>
-  </div>
   <%= link_to_remove_association t(".remove_image"), f %>
 </div>

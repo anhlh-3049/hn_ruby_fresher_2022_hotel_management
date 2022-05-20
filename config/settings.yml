@@ -8,15 +8,6 @@ user:
     max_length: 50
 admin:
   room:
-    pagy:
-      max_length: 10
-    new:
-      description:
-        max_length: 5000
-      price:
-        min: 0
-      name: 50
-  room:
     name:
       max_length: 50
     description:
@@ -28,6 +19,16 @@ admin:
   room_view:
     name:
       max_length: 100
+    pagy:
+      max_length: 10
+    new:
+      description:
+        max_length: 5000
+      price:
+        min: 0
+      name:
+        max_length: 50
 models:
   room: [80, 90]
   images_format: ["image/jpeg", "image/gif", "image/png"]
+  image_size: 25MB

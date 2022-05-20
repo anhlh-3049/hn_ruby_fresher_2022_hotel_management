@@ -52,13 +52,25 @@ vi:
       new:
         title: "Tạo phòng mới"
         provide_title: "Tạo phòng mới"
+      edit:
+        title: "Cập nhật phòng"
+        provide_title: "Cập nhật phòng"
+      form:
         name: "Tên"
         price: "Giá"
-        description: "Description"
+        description: "Mô tả"
         add_image: "Thêm hình ảnh"
-        btn_create: "Tạo phòng mới"
+        btn_create: "Hoàn thành"
       image_fields:
         remove_image: "Xóa hình ảnh"
+      create:
+        flash_sucsses: "Tạo thành công"
+        flash_error: "Tạo lỗi"
+      update:
+        flash_sucsses: "Cập nhật phòng"
+        flash_error: "Lỗi cập nhật phòng"
+      find_room:
+        flash_error: "Không tìm thấy phòng"
     room_views:
       index:
         provide_title: "Quang cảnh phòng"
@@ -68,19 +80,12 @@ vi:
         create_btn: "Tạo chế độ xem phòng"
       create:
         flash_sucsses: "Tạo thành công"
+        flash_error: "Tạo lỗi"
       new:
         provide_title: "Tạo chế độ xem phòng"
         title: "Tạo chế độ xem phòng"
         name: "Tên"
         btn_create: "Tạo chế độ xem phòng"
-    dash_broad:
-      new:
-        name: "Tên"
-        price: "Giá"
-        description: "Mô tả"
-        btn_create: "Tạo phòng mới"
-        provide_title: "Tạo phòng mới"
-        title: "Tạo phòng mới"
     dash_broads:
       sidebar:
         rooms_sidebar: "Quản lý phòng"

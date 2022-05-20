@@ -1,0 +1,30 @@
+<%= form_for [:admin, @room] do |f| %>
+  <div class="field">
+    <%= f.label t(".name"), class: "text-color" %>
+    <%= f.text_field :name, class: "form-control mt-2", max: Settings.admin.room_view.new.name.max_length  %>
+  </div>
+  <div class="field">
+    <%= f.label t(".price") %>
+    <%= f.number_field :price, class: "form-control", min: Settings.admin.room_view.new.price.min %>
+  </div>
+  <div class="field">
+    <%= f.label t(".description") %>
+    <%= f.text_area :description, class: "form-control", max: Settings.admin.room_view.new.description.max_length %>
+  </div>
+  <br>
+  <div class="field">
+    <%= f.label :room_view_id %>
+    <%= f.select :room_view_id, RoomView.pluck(:name, :id) , class: "form-control" %>
+  </div>
+  <div id="images">
+    <%= f.fields_for :images do |image| %>
+      <%= render "image_fields", f: image %>
+      <br>
+    <% end %>
+  <div class="links">
+    <%= link_to_add_association t(".add_image"), f, :images %>
+  </div>
+  </div>
+  <hr>
+  <%= f.submit t(".btn_create"), class: "btn btn-primary" %>
+<% end %>

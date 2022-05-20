@@ -52,13 +52,25 @@ en:
       new:
         title: "Create new room"
         provide_title: "Create new room"
+      edit:
+        title: "Update room"
+        provide_title: "Update room"
+      form:
         name: "Name"
         price: "Price"
         description: "Description"
         add_image: "Add Image"
-        btn_create: "Create new room"
+        btn_create: "Done"
       image_fields:
         remove_image: "Remove image"
+      create:
+        flash_sucsses: "Create Success"
+        flash_error: "Create Error"
+      update:
+        flash_sucsses: "Room Update"
+        flash_error: "Room Update Error"
+      find_room:
+        flash_error: "Can't find the room"
     room_views:
       index:
         provide_title: "Room Views"
@@ -68,19 +80,12 @@ en:
         create_btn: "Create Room View"
       create:
         flash_sucsses: "Create sucsses"
+        flash_error: "Create error"
       new:
         provide_title: "Create room view"
         title: "Create room view"
         name: "Name"
         btn_create: "Create room view"
-    dash_broad:
-      new:
-        name: "Name"
-        price: "Price"
-        description: "Description"
-        btn_create: "Create Room"
-        provide_title: "Create Room"
-        title: "Create Room"
     dash_broads:
       sidebar:
         rooms_sidebar: "Manage Rooms"

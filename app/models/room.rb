@@ -1,7 +1,7 @@
 class Room < ApplicationRecord
-  UPDATETABLE_ATTRS =
-    %i(name price description status user_id room_view_id)
-    .push (images_attributes: [:imageable_id, :imageable_url, :_destroy]).freeze
+  UPDATETABLE_ATTRS = %i(name price description status user_id
+    room_view_id).push(images_attributes: [:imageable_id, :imageable_url,
+    :imageable_type, :_destroy]).freeze
 
   has_many :images, as: :imageable, dependent: :destroy
   has_many :booking_rooms, dependent: :destroy
