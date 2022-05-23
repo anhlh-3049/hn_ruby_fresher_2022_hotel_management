@@ -37,6 +37,10 @@ vi:
       btn_title: "Đăng nhập"
     create:
       flash_danger: "Kết hợp email / mật khẩu không hợp lệ"
+  booking_rooms:
+      create:
+        flash_sucsses: "Gửi yêu cầu thành công"
+        flash_error: "Gửi yêu cầu không thành công"
   admin:
     rooms:
       index:
@@ -84,8 +88,20 @@ vi:
       new:
         provide_title: "Tạo chế độ xem phòng"
         title: "Tạo chế độ xem phòng"
+      destroy:
+        flash_sucsses: "Xóa thành công"
+      room_view:
+        delete: "Xóa"
+        confirm_message: "Bạn muốn xóa?"
+      update:
+        flash_sucsses: "Cập nhật thành công"
+        flash_error: "Không thể cập nhật"
+      edit:
+        title: "Cập nhật chế độ xem phòng"
+        provide_title: "Cập nhật chế độ xem phòng"
+      form:
         name: "Tên"
-        btn_create: "Tạo chế độ xem phòng"
+        btn_create: "Hoàn thành"
     dash_broads:
       sidebar:
         rooms_sidebar: "Quản lý phòng"

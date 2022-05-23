@@ -1,0 +1,6 @@
+<%= form_for([:admin, @room_view]) do |f| %>
+  <%= f.label t(".name"), class: "text-color" %>
+  <%= f.text_field :name, class: "form-control mt-2" %>
+  <hr>
+  <%= f.submit t(".btn_create"), class: "btn btn-primary" %>
+<% end %>

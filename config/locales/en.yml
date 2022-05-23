@@ -37,6 +37,10 @@ en:
       btn_title: "Log in"
     create:
       flash_danger: "Invalid email/password combination"
+    booking_rooms:
+      create:
+        flash_sucsses: "Submit request successfully"
+        flash_error: "Submit request failed"
   admin:
     rooms:
       index:
@@ -84,8 +88,20 @@ en:
       new:
         provide_title: "Create room view"
         title: "Create room view"
+      destroy:
+        flash_sucsses: "Delete Success"
+      room_view:
+        delete: "Delete"
+        confirm_message: "You want delete?"
+      update:
+        flash_sucsses: "Update Sucsses"
+        flash_error: "Can not Update"
+      edit:
+        title: "Update Room View"
+        provide_title: "Update Room View"
+      form:
         name: "Name"
-        btn_create: "Create room view"
+        btn_create: "Done"
     dash_broads:
       sidebar:
         rooms_sidebar: "Manage Rooms"
